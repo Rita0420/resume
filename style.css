@@ -1,0 +1,53 @@
+#aboutMe{
+    margin-top: 15vh;
+}
+.picBox{
+    width: 40vh;
+    height: 40vh;
+    background-color: thistle;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.picBox img{
+    padding-top: 6vh;
+    width: 25vh;
+}
+h3{
+    text-align: center;
+}
+.period{
+    width: 30vw;
+    height: 5.5vh;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 10px;
+    margin-left: 1vw;
+}
+.jobBox :hover .footprints{
+    color: gray;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.jobBox :hover .period{
+    border: 5px solid black;
+    transition: 0.3s;
+}
+.content{
+    box-shadow: 2px 2px 5px gray;
+}
+
+.jobBox :hover.content{
+    box-shadow: 5px 5px 10px gray;
+    transition: 0.3s;
+}
+#skill{
+text-align: center;
+}
+@media (max-width: 576px) {
+
+    .period{
+        width: 60vw;
+        margin-top: 0.5vh;
+    }
+}
