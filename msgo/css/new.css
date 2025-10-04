@@ -1,0 +1,212 @@
+/* 奶咖色質感 + 故事書風格整體 CSS 設定 */
+:root {
+    --main-bg: #f6f1eb;
+    --accent-color: #bfa88f;
+    --secondary-color: #e8dbce;
+    --text-dark: #4b3f2f;
+    --text-light: #7b6652;
+    --highlight: #d9c1a3;
+}
+
+body {
+    font-family: 'Segoe UI', 'Noto Sans TC', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--secondary-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.navbar-brand img.logoImg {
+    height: 5vh;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.cardBox .card {
+    background-color: var(--secondary-color);
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.card-text {
+    background-color: #fdfaf7;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight);
+}
+
+.modal-content {
+    background-color: #fffaf5;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+.modal-title {
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.moreBody {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--text-light);
+}
+
+.moreBody>div{
+    width: 49%;
+}
+
+.menu {
+    position: fixed;
+    /* background-color: var(--highlight); */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.main {
+    background-color: #fffaf3;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h6 {
+    margin-top: 2vh;
+    color: var(--text-dark);
+}
+
+.btn-info {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: var(--highlight);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(60%) sepia(20%) saturate(300%) hue-rotate(10deg);
+}
+
+.gameC{
+    width: 40%;
+    text-align: right;
+}
+
+.boxC{
+    display: flex;
+    width: 100%;
+}
+
+.imgC{
+    width: 60%;
+}
+.newC{
+        position: fixed;
+        z-index: 100;
+        bottom: 1vh;
+        left: 1vw;
+    }
+
+.btn-delete {
+  background-color: #d98880; /* 柔和紅色 */
+  border: none;
+  color: #fffaf3;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-delete:hover {
+  background-color: #c76a64; /* hover 更深一點 */
+  transform: translateY(-2px);
+}
+
+.btn-delete:active {
+  transform: translateY(0);
+  background-color: #b85c56;
+}
+
+.btn-delete i {
+  margin-right: 6px; /* 如果有 icon，跟文字保持間距 */
+}
+
+/* 響應式設定 */
+@media (max-width: 576px) {
+    .logoImg {
+        height: 5vh;
+    }
+    .carouselMore {
+        width: calc((100% / 12) * 9);
+        position: absolute;
+        top: 100vh;
+        right: 0;
+    }
+    .cardBox .card {
+        width: 94vw;
+        margin: auto;
+    }
+    .carousel {
+        width: 94vw;
+    }
+    .menu {
+        position: fixed;
+        margin-bottom: 1rem;
+    }
+    .main {
+        height: auto;
+    }
+    .smallCard {
+        display: none;
+    }
+    .input {
+        width: 50vw;
+    }
+    .moreBody{
+        flex-wrap: wrap;
+    }
+    .moreBody>div{
+        width: 100%;
+    }
+    
+    
+}

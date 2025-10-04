@@ -1,0 +1,113 @@
+@media (max-width: 576px) {
+    .logoImg{
+        height: 5vh;
+    }
+    .chang{
+        bottom: -10vh;
+    }
+    .input{
+        width:50vw;
+    }
+    .carouselMore{
+     position: absolute;
+     right: 0;
+     top: 110%;
+    }
+    .carousel{
+        width: 100vw;
+    }
+    .cardBox .card {
+        width: 94vw;
+        margin: auto;
+    }
+    #demo{
+        width: 94vw;
+    }
+
+    .smallCard{
+        display: none;
+    }
+
+
+}
+.logoImg{
+    height:5vh;
+}
+
+.card-text{
+    background-color: aliceblue;
+}
+
+.menu{
+    width: 20vw;
+    height: 80vh;
+    background-color: aliceblue;
+    position: fixed;
+}
+
+.chang{
+    position: absolute;
+    right: 0;
+    
+}
+
+input{
+    width: 100%;
+}
+
+.boxMore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:overlay;
+}
+
+.boxC{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.gameC input{
+width: 5vw;
+}
+
+h6{
+    margin-top: 2vh;
+}
+
+.newPic{
+    position: fixed;
+    right:1vw;
+    bottom: 5vh;
+}
+
+.main{
+    height: 80vh;
+    background-color: aquamarine;
+}
+.hidden{
+    display: none;
+}
+
+.carousel{
+    width: 50vw;
+    margin: auto;
+}
+
+.cardBox{
+    width: 23vw;
+}
+
+.newsContainer{
+    margin-top: 10vh;
+}
+
+.moreBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+

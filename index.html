@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -23,7 +23,7 @@
 <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-house-chimney"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-12 col-sm-6">
                 <div class="picBox">
-                    <img src="./images/IMG_9902.JPG" alt="">
+                    <img src="./images/IMG_9902.PNG" alt="">
                 </div>
             </div>
             <div class="col-12 col-sm-6 mt-3">
@@ -73,11 +73,11 @@
     <div class="container">
         <div class="row">
             <div class="col" id="skill">
-                <div class="btn btn-dark mt-2">PHP</div>
-                <div class="btn btn-dark mt-2">MySQL</div>
-                <div class="btn btn-dark mt-2">HTML5</div>
-                <div class="btn btn-dark mt-2">JavaScript</div>
-                <div class="btn btn-dark mt-2">Laravel</div>
+                <div class="btn mt-2">PHP</div>
+                <div class="btn mt-2">MySQL</div>
+                <div class="btn mt-2">HTML5</div>
+                <div class="btn mt-2">JavaScript</div>
+                <div class="btn mt-2">Laravel</div>
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
     <div class="container mt-5" id="experience">
         <div class="row">
             <div class="col">
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -305,7 +305,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -343,7 +343,7 @@
 
                     </div>
                 </div>
-                <div class="jobBox mt-3">
+                <div class="jobBox mt-3 reveal">
                     <div style="display: flex;">
                         <div class="footprints">
                             <i class="fa-solid fa-paw fa-2x"></i>
@@ -384,10 +384,27 @@
     <!-- experience end-->
 
     <!-- portfolio -->
-    <div class="container">
+    <div class="container mt-5" id="portfolio">
         <div class="row">
-            <div class="col">
-
+            <div class="col-12 col-sm-4 mt-3">
+                <div class="card text-center reveal">
+                    <div class="card-header">謎書狗</div>
+                    <div class="card-body">
+                        <a href="./msgo/index.php">
+                            <img src="./msgo/icon/logo.png" style="height: 100%;" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-3">
+                <div class="card text-center reveal">
+                    <div class="card-header">乙級第一題-卓越科技大學校園資訊系統</div>
+                    <div class="card-body">
+                        <a href="./msgo/index.php">
+                            <img src="./images/web01.png" style="height: 100%;" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -409,6 +426,19 @@
         $('.close').on('click', function () {
             $(this).parent().toggle();
             $('.short').show();
+        });
+
+        $(window).on("scroll", function () {
+            $(".reveal").each(function () {
+                let top = $(this).offset().top;
+                let scrollTop = $(window).scrollTop();
+                let windowHeight = $(window).height();
+
+
+                if (scrollTop + windowHeight > top + 50) {
+                    $(this).addClass("show");
+                }
+            });
         });
     </script>
 
